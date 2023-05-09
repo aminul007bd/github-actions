@@ -39,7 +39,7 @@ jobs:
           python-version: '3.x'
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: pip install psycopg2 faker tabulate
 
       - name: Seed the database
         run: python seed_database.py
